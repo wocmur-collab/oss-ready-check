@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oss-ready-check"
+version = "0.1.0"
+description = "A read-only checklist for common open-source release-readiness signals"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "wocmur-collab" }]
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development",
+]
+
+[project.scripts]
+oss-ready-check = "oss_ready_check:main"
+
+[tool.setuptools]
+py-modules = ["oss_ready_check"]
